@@ -10,9 +10,6 @@ load_dotenv()
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 
-YOUTUBE_API_KEY = "AIzaSyAwqVNAkpW0tIqW5pw844dOBOaEHrO9gQI"
-
-
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
