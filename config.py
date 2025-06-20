@@ -6,26 +6,30 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", 20346025))
+API_HASH = getenv("API_HASH", "d34558796860a173cb5c918968fe85a0")
+BOT_TOKEN = getenv("BOT_TOKEN", "7395654013:AAGB8OahRkb5vzS3KAvXVe4ec-Y2Fe1g8Jk")
 
-# Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+# -------------------------------------------------------
+OWNER_USERNAME = getenv("OWNER_USERNAME","ll_KUZE_ll")
+# --------------------------------------------------------
+BOT_USERNAME = getenv("BOT_USERNAME","leo_musicz_bot")
+# --------------------------------------------------------
+BOT_NAME = getenv("˹ ʟᴇᴏ ꭙ ᴍᴜsɪᴄ ˼")
+# ---------------------------------------------------------
+
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
-
-# Set this to true if you want post ads automatically
-ADS_MODE = getenv("ADS_MODE", None)
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = (getenv("LOGGER_ID", "@dark_bot_log"))
 
-# Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", None))
+# Get this value from @@Dark_x_musiczz_bot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", "7926944005"))
+
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,18 +39,18 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/AnonymousX1025/AnonXMusic",
+    "https://github.com/itzarjuna1/Dark-",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/DEV_UPDATE")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DEV_UPDATE")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dark_x_knight_musiczz_support")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/dark_knight_support")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", None))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -65,7 +69,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION","BQFYUd4AaBQ-7rxbKMguDsyH8oJPUtsDN4JBK4J-P09mTvQkHm24IsRuD3VtdQi1nbxvR97mcLHog1Ke9s6dKIYskILAyeaNzfr7CayVeDm_hiY0XKz9Ge7BR8A4KXBFdpUy_9KA7t0yDheKWcdJOM-ArBjs40uUUIjyPd0tntz3tWArfLmttWkuUNI2LGmTn_EjZjBH_XRopuZNVsesynDa7C5z8a-5V_Z87OKlzkoQL8u5Tw34EYMA_0eBsdjuEs5-rU2gz80eDSdIf9e0Pf7vWxy8tPxRjNe6DROsj5-m-CEys1SIoF_Uaw0jCZo8lZRRFk_ezLpnp2zclT0dk3iCxJDPeQAAAAHjZt-vAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -81,21 +85,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://envs.sh/NmV.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/rca1m3.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/4bff7df05636d1cca7532.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/12c791.jpg"
 )
-PLAYLIST_IMG_URL = "https://envs.sh/_B5.jpg"
-STATS_IMG_URL = "https://envs.sh/_BK.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/12c791.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/p6iyy9.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/wrsicv.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/m1cye7.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/9sx30u.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/ack2ez.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/wyk2qj.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/ambjn5.MP4"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/1ligtm.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/1ligtm.jpg"
 
 
 def time_to_seconds(time):
